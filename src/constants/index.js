@@ -46,15 +46,15 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Anime Lover",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Pro Gamer",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Single",
       icon: creator,
     },
   ];
@@ -80,10 +80,10 @@ import {
       name: "React JS",
       icon: reactjs,
     },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
+    // {
+    //   name: "Redux Toolkit",
+    //   icon: redux,
+    // },
     {
       name: "Tailwind CSS",
       icon: tailwind,
@@ -96,10 +96,10 @@ import {
       name: "MongoDB",
       icon: mongodb,
     },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
+    // {
+    //   name: "Three JS",
+    //   icon: threejs,
+    // },
     {
       name: "git",
       icon: git,
@@ -108,67 +108,104 @@ import {
       name: "figma",
       icon: figma,
     },
-    {
-      name: "docker",
-      icon: docker,
-    },
+    // {
+    //   name: "docker",
+    //   icon: docker,
+    // },
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
+      title: "Part time tutor",
+      company_name: "Edify tution",
       icon: starbucks,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "March 2015 - April 2017",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "As a Part-Time O'Level Tutor at Edify Tuition, I played a pivotal role in providing quality education and academic support to students preparing for their O'Level examinations.",
+        "My responsibilities encompassed a range of tasks, contributing to the overall success of the students and the institution.",
+        
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
+      title: "volunteer in Event management",
+      company_name: "MLIS",
       icon: tesla,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Jan 2015 - Jan 2017",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "As a committed volunteer in Event Management at MLIS School, I actively contributed to the planning, coordination, and execution of various school events.  ",
+        "This role allowed me to gain valuable experience in event logistics while actively participating in creating memorable experiences for both students and stakeholders.",
+       
       ],
     },
     {
       title: "Web Developer",
-      company_name: "Shopify",
+      company_name: "Personal Project",
       icon: shopify,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Jan 2022 - April 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developed an Automated Weather App as part of the Web App course. The primary objective was to create a user-friendly application that provides real-time weather information. The app utilized APIs to fetch live weather data, allowing users to access accurate and up-to-date information about various locations.",
+        "Created a Flower Vending Website with the goal of providing an interactive platform for users to explore and purchase flowers online. The project encompassed various elements of e-commerce and focused on delivering a seamless and enjoyable shopping experience.",
+        
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
+      title: "Internship",
+      company_name: "ABA Group",
       icon: meta,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "June 2022 - Sep 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "During my internship as a Network Engineer at ABA Group, I had the opportunity to immerse myself in the dynamic field of networking and gain practical experience in designing, implementing, and maintaining robust network infrastructures. ",
+        "The internship provided a comprehensive learning environment, allowing me to contribute to real-world projects and collaborate with seasoned professionals.",
+  
       ],
     },
   ];
   
+  const educations = [
+    {
+      title: "O'Level",
+      company_name: "Maple Leaf International School",
+      icon: starbucks,
+      iconBg: "#383E56",
+      date: "May 2014 - Jan 2015",
+      points: [
+        "Completed O'Level from MLIS with GPA 4.63 in 7 subjects.",
+       
+        
+      ],
+    },
+    {
+      title: "A'Level",
+      company_name: "Maple Leaf International School",
+      icon: starbucks,
+      iconBg: "#383E56",
+      date: "Jan 2015 - Jan 2018",
+      points: [
+        " Completed A'Level from MLIS with GPA 2.5 in 2 subjects.",
+        
+       
+      ],
+    },
+    {
+      title: "CSE",
+      company_name: "Independent University, Bangladesh",
+      icon: starbucks,
+      iconBg: "#E6DEDD",
+      date: "May 2018 - Sep 2022",
+      points: [
+        "Graduated from IUB with CGPA 2.89, majoring on Computer Science and Engineering and minor on Human Resource Management",
+        
+        
+      ],
+    }
+   
+  ];
+
+
   const testimonials = [
     {
       testimonial:
@@ -198,7 +235,7 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "GrabCar",
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
@@ -216,50 +253,50 @@ import {
         },
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Towhidul123/brandShop-client",
     },
     {
-      name: "Job IT",
+      name: "TechFusion",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Web application that enables users to showcase products which are reviewed by users and where other users can post products to be reviewed.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "mongodb",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "tailwind",
           color: "pink-text-gradient",
         },
       ],
       image: jobit,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Towhidul123/tech-client",
     },
     {
-      name: "Trip Guide",
+      name: "BoBo Motel",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A comprehensive travel booking platform that allows users to book  hotels and offers curated recommendations for popular destinations.",
       tags: [
         {
-          name: "nextjs",
+          name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "mongodb",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "tailwind",
           color: "pink-text-gradient",
         },
       ],
       image: tripguide,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Towhidul123/hotel-client",
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences,educations, testimonials, projects };
