@@ -7,7 +7,7 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { Tilt } from "react-tilt";
-
+import { FaDownload } from "react-icons/fa6";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
@@ -49,13 +49,24 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] flex '
       >
-        I'm a skilled web developer with experience in React, Node.js, MongoDB,
-        JavaScript, and expertise in frameworks like
-        tailwind. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        <div>
+          I'm a skilled web developer with experience in React, Node.js, MongoDB,
+          JavaScript, and expertise in frameworks like
+          tailwind. I'm a quick learner and collaborate closely with clients to
+          create efficient, scalable, and user-friendly solutions that solve
+          real-world problems. Let's work together to bring your ideas to life!
+        </div>
+
+        <button className="btn bg-[#1d1836]">
+          <a href="https://drive.google.com/file/d/1QTD1_H0Oum-ypI3_zhquu-nZvnvmuQzA/view?usp=sharing" download="K M_CV.pdf" className="text-secondary" target="_blank" rel="noopener noreferrer">
+            Download CV
+          </a>
+
+          <FaDownload />
+        </button>
+
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

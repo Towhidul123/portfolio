@@ -6,6 +6,12 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import toast, { Toaster } from "react-hot-toast";
+
+import { SiGmail } from "react-icons/si";
+
+
+
 
 const Contact = () => {
   const formRef = useRef();
@@ -33,22 +39,26 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        // import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        // import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_udeie4c',
+        'template_yyhtayt',
+
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Towhid",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "kmtowhidulislam@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        // import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        'mpQOH7DfiZvFlCkkw'
       )
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
+         
+          toast.success("Thank you. I will get back to you as soon as possible.");
           setForm({
             name: "",
             email: "",
@@ -68,12 +78,18 @@ const Contact = () => {
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
     >
+      <Toaster
+        position="bottom-right"
+        reverseOrder={false}
+      />
+
+
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <h3 className={styles.sectionHeadText}>Contact</h3>
 
         <form
           ref={formRef}
@@ -125,9 +141,12 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px] text-center items-center justify-center flex flex-col'
       >
+         <h3 className="text-white font-black md:text-[40px] sm:text-[30px] xs:text-[20px] text-[10px]">My Email</h3>
+          <p className="space-x-4 flex sm:text-[18px] text-[14px] text-secondary  tracking-wider"><span className="flex justify-center items-center"><SiGmail /></span><span>kmtowhidulislam@gmail.com</span></p>
        
+
       </motion.div>
     </div>
   );
